@@ -193,7 +193,9 @@ export class VideoCommentAddComponent extends FormReactive implements OnChanges,
       // Use the native textarea autosize according to the text's break lines
       this.textareaElement.nativeElement.dispatchEvent(new Event('input'))
     })
-
+    console.log(this)
+    console.log(this.form)
+    console.log(this.form.patchValue)
     this.form.patchValue({ text })
   }
 }

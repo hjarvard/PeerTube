@@ -71,7 +71,7 @@ export class SearchTypeaheadComponent implements OnInit, AfterViewInit, AfterVie
   }
 
   areInstructionsDisplayed () {
-    return !this.search
+    return false
   }
 
   showSearchGlobalHelp () {

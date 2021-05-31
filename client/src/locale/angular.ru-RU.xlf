@@ -425,12 +425,12 @@
       </trans-unit>
       <trans-unit id="f73a82bb90c6c856cc0d2e3b2f5c109460074912" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 view} other {<x id="INTERPOLATION"/> views}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 view} other {<x id="INTERPOLATION"/> views}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> просмотр} few {<x id="INTERPOLATION"/> просмотра} other {<x id="INTERPOLATION"/> просмотров}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-video/video-views-counter.component.html</context><context context-type="linenumber">3</context></context-group>
       </trans-unit>
       <trans-unit id="7ac18f5bb1a9b9f245acc8497c2f165a7e9f8510" datatype="html">
         <source><x id="ICU" equiv-text="{video.views, plural, =1 {1 view} other {{{ video.views | myNumberFormatter }} views}}"/> </source>
-        <target state="translated"><x id="ICU" equiv-text="{video.views, plural, =1 {1 просмотр} other {{{ video.views | myNumberFormatter }} просмотра(-ов)}} "/> </target>
+        <target state="translated"><x id="ICU" equiv-text="{video.views, plural, one {{{ video.views | myNumberFormatter }} просмотр} few {{{ video.views | myNumberFormatter }} просмотра} other {{{ video.views | myNumberFormatter }} просмотра(-ов)}} "/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/shared-video/video-views-counter.component.html</context>
           <context context-type="linenumber">3,4</context>
@@ -438,7 +438,7 @@
       </trans-unit>
       <trans-unit id="bcd730167966d931a8956022c370de9ac26bc3ac" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 viewer} other {<x id="INTERPOLATION"/> viewers}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 просмотр} other {<x id="INTERPOLATION"/> просмотров}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> просмотр} few {<x id="INTERPOLATION"/> просмотра} other {<x id="INTERPOLATION"/> просмотров}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/shared-video/video-views-counter.component.html</context>
           <context context-type="linenumber">7</context>
@@ -446,7 +446,7 @@
       </trans-unit>
       <trans-unit id="2a6ba0b4ffe992ddd03f40ee75b879996bdfb5f7" datatype="html">
         <source><x id="ICU" equiv-text="{video.views, plural, =1 {1 viewer} other {{{ video.views | myNumberFormatter }} viewers}}"/> </source>
-        <target state="translated"><x id="ICU" equiv-text="{video.views, plural, =1 {1 просмотр} other {{{ video.views | myNumberFormatter }} просмотров}}"/> </target>
+        <target state="translated"><x id="ICU" equiv-text="{video.views, plural, one {{{ video.views | myNumberFormatter }} просмотр} few {{{ video.views | myNumberFormatter }} просмотра} other {{{ video.views | myNumberFormatter }} просмотров}}"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/shared-video/video-views-counter.component.html</context>
           <context context-type="linenumber">7,8</context>
@@ -1647,7 +1647,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="73216504c8903e04fdb415d876eb8969dd3afa60" datatype="html">
         <source>Search videos, channels…</source>
-        <target state="translated">Поиск видео, каналов…</target>
+        <target state="translated">Поиск видео…</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/header/search-typeahead.component.html</context><context context-type="linenumber">3</context></context-group>
       </trans-unit>
       <trans-unit id="90ce30ddedd5892740bb41e9ead736cd2c0f9b53" datatype="html">
@@ -2197,7 +2197,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="ca4414270288e446478393fa1ea868337bccfb17" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 videos} other {<x id="INTERPOLATION"/> videos}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 videos} other {<x id="INTERPOLATION"/> videos}}</target>
+        <target state="translated">{VAR_PLURAL, plural, =0 {нет видео} other {<x id="INTERPOLATION"/> видео}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+video-channels/video-channels.component.html</context>
           <context context-type="linenumber">76</context>
@@ -2205,7 +2205,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="d4343eca7f4daf518091fb7d27912076ac53ce1d" datatype="html">
         <source><x id="ICU" equiv-text="{channelVideosCount, plural, =1 {1 videos} other {{{ channelVideosCount }} videos}}"/> </source>
-        <target state="translated"><x id="ICU" equiv-text="{channelVideosCount, plural, =1 {1 videos} other {{{ channelVideosCount }} videos}}"/> </target>
+        <target state="translated"><x id="ICU" equiv-text="{channelVideosCount, plural, =0 {нет видео} other {{{ channelVideosCount }} видео}}"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+video-channels/video-channels.component.html</context>
           <context context-type="linenumber">76,77</context>
@@ -2670,7 +2670,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="e01bfa3629e2133dbf307975446bde047eb8bd1f" datatype="html">
         <source>{VAR_SELECT, select, undefined {Unsubscribe} other {Unsubscribe from all channels} }</source>
-        <target state="translated">{VAR_SELECT, select, undefined {Unsubscribe} other {Unsubscribe from all channels} }</target>
+        <target state="translated">{VAR_SELECT, select, undefined {Вы подписаны} other {Отписаться от всех каналов}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-user-subscription/subscribe-button.component.html</context><context context-type="linenumber">34</context></context-group>
       </trans-unit>
       <trans-unit id="f0c5f6f270e70cbe063b5368fcf48f9afc1abd9b">
@@ -2693,7 +2693,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="284b55e2ae9f6e5bc78c92a18ef26da02f380079">
         <source>Originally published</source>
-        <target>Официально опубликовано</target>
+        <target>Первоначально опубликовано</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+videos/+video-watch/video-watch.component.html</context><context context-type="linenumber">240</context></context-group>
       </trans-unit>
       <trans-unit id="4c0ba3cde3b3c58b855ffb4beaa5804a2fc3826b" datatype="html">
@@ -2757,7 +2757,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="89727d60d91ad1519f6ea7c34e5dcd9e9836ff59" datatype="html">
         <source>View <x id="ICU" equiv-text="{comment.totalReplies, plural, =1 {1 reply} other {{{ comment.totalReplies }} replies}}"/> from <x id="INTERPOLATION_1" equiv-text="{{ video?.account?.displayName || 'the author' }}"/> and others </source>
-        <target state="translated">Просмотреть <x id="ICU" equiv-text="{comment.totalReplies, plural, =1 {1 reply} other {{{ comment.totalReplies }} replies}}"/> из <x id="INTERPOLATION_1" equiv-text="{{ video?.account?.displayName || 'the author' }}"/> и другие </target>
+        <target state="translated">Просмотреть <x id="ICU" equiv-text="{comment.totalReplies, plural, one {{{ comment.totalReplies }} ответ} few {{{ comment.totalReplies }} ответа} other {{{ comment.totalReplies }} ответов}}"/> от <x id="INTERPOLATION_1" equiv-text="{{ video?.account?.displayName || 'автора' }}"/> и других</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+videos/+video-watch/comment/video-comments.component.html</context>
           <context context-type="linenumber">80,81</context>
@@ -2765,7 +2765,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="c62bf5fdb0a87432a1f6381684decefd3488d3bf" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 reply} other {<x id="INTERPOLATION"/> replies}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 reply} other {<x id="INTERPOLATION"/> replies}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> ответ} few {<x id="INTERPOLATION"/> ответа} other {<x id="INTERPOLATION"/> replies}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+videos/+video-watch/comment/video-comments.component.html</context>
           <context context-type="linenumber">80</context>
@@ -2781,7 +2781,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="bfaf6c075fc1fbf2301fffd7daea06d8dd4ed30e" datatype="html">
         <source>View <x id="ICU" equiv-text="{comment.totalReplies, plural, =1 {1 reply} other {{{ comment.totalReplies }} replies}}"/> from <x id="INTERPOLATION_1" equiv-text="{{ video?.account?.displayName || 'the author' }}"/> </source>
-        <target state="translated">Просмотреть <x id="ICU" equiv-text="{comment.totalReplies, plural, =1 {1 reply} other {{{ comment.totalReplies }} replies}}"/> из <x id="INTERPOLATION_1" equiv-text="{{ video?.account?.displayName || 'the author' }}"/> </target>
+        <target state="translated">Просмотреть <x id="ICU" equiv-text="{comment.totalReplies, plural, one {{{ comment.totalReplies }} ответ} few {{{ comment.totalReplies }} ответа} other {{{ comment.totalReplies }} ответов}}"/> от <x id="INTERPOLATION_1" equiv-text="{{ video?.account?.displayName || 'автора' }}"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+videos/+video-watch/comment/video-comments.component.html</context>
           <context context-type="linenumber">83,84</context>
@@ -2789,7 +2789,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="c093eefa3ad4b72064697ac046c6131274ae2b85" datatype="html">
         <source>View <x id="ICU" equiv-text="{comment.totalReplies, plural, =1 {1 reply} other {{{ comment.totalReplies }} replies}}"/></source>
-        <target state="translated">Просмотр <x id="ICU" equiv-text="{comment.totalReplies, plural, =1 {1 reply} other {{{ comment.totalReplies }} replies}}"/></target>
+        <target state="translated">Просмотреть <x id="ICU" equiv-text="{comment.totalReplies, plural, one {{{ comment.totalReplies }} ответ} few {{{ comment.totalReplies }} ответа} other {{{ comment.totalReplies }} ответов}}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+videos/+video-watch/comment/video-comments.component.html</context>
           <context context-type="linenumber">87</context>
@@ -2939,7 +2939,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="b56702ff10875710f111634cc315cd3ef01b206f" datatype="html">
         <source>Your report will be sent to moderators of <x id="INTERPOLATION"/><x id="START_TAG_NG_CONTAINER"/> and will be forwarded to the comment origin (<x id="INTERPOLATION_1"/>) too<x id="CLOSE_TAG_NG_CONTAINER"/>. </source>
-        <target state="translated">Ваш отчет будет отправлен модераторам <x id="INTERPOLATION"/><x id="START_TAG_NG_CONTAINER"/> и будет перенаправлен в источник комментария (<x id="INTERPOLATION_1"/>) тоже<x id="CLOSE_TAG_NG_CONTAINER"/>. </target>
+        <target state="translated">Ваш отчёт будет отправлен модераторам <x id="INTERPOLATION"/><x id="START_TAG_NG_CONTAINER"/> и будет перенаправлен в источник комментария (<x id="INTERPOLATION_1"/>) тоже<x id="CLOSE_TAG_NG_CONTAINER"/>. </target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-moderation/report-modals/report.component.html</context><context context-type="linenumber">36</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-moderation/report-modals/report.component.html</context><context context-type="linenumber">36</context></context-group>
       </trans-unit>
@@ -3653,12 +3653,12 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="fd7b8e728c25b616934661747224b1b2e7d9ea5c" datatype="html">
         <source><x id="ICU" equiv-text="{abuse.countReportsForReporter, plural, =1 {1 report} other {{{ abuse.countReportsForReporter }} reports}}"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;ml-1 glyphicon glyphicon-flag&quot;>"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/></source>
-        <target state="translated"><x id="ICU" equiv-text="{abuse.countReportsForReporter, plural, =1 {1 report} other {{{ abuse.countReportsForReporter }} reports}}"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;ml-1 glyphicon glyphicon-flag&quot;>"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/></target>
+        <target state="translated"><x id="ICU" equiv-text="{abuse.countReportsForReporter, plural, one {{{ abuse.countReportsForReporter }} отчёт} few {{{ abuse.countReportsForReporter }} отчёта} other {{{ abuse.countReportsForReporter }} отчётов}}"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;ml-1 glyphicon glyphicon-flag&quot;>"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/></target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-abuse-list/abuse-details.component.html</context><context context-type="linenumber">22</context></context-group>
       </trans-unit>
       <trans-unit id="fe8634bd713368d7971877c0e09d1869f09c924d" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 report} other {<x id="INTERPOLATION"/> reports}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 report} other { <x id="INTERPOLATION"/> отчётов} }</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> отчёт} few {<x id="INTERPOLATION"/> отчёта} other { <x id="INTERPOLATION"/> отчётов} }</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-abuse-list/abuse-details.component.html</context><context context-type="linenumber">22</context></context-group>
       </trans-unit>
       <trans-unit id="2d1ea268a6a9f483dbc2cbfe19bf4256a57a6af4">
@@ -3738,12 +3738,12 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="da3ebfaee320ad7a8a41c75d6ee19e687f9b484d" datatype="html">
         <source><x id="ICU" equiv-text="{abuse.countReportsForReportee, plural, =1 {1 report} other {{{ abuse.countReportsForReportee }} reports}}"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;ml-1 glyphicon glyphicon-flag&quot;>"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/></source>
-        <target state="translated"><x id="ICU" equiv-text="{abuse.countReportsForReportee, plural, =1 {1 report} other {{{ abuse.countReportsForReportee }} reports}}"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;ml-1 glyphicon glyphicon-flag&quot;>"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/></target>
+        <target state="translated"><x id="ICU" equiv-text="{abuse.countReportsForReportee, plural, one {{{ abuse.countReportsForReportee }} отчёт} few {{{ abuse.countReportsForReportee }} отчёта} other {{{ abuse.countReportsForReportee }} отчётов}}"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;ml-1 glyphicon glyphicon-flag&quot;>"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>"/></target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-abuse-list/abuse-details.component.html</context><context context-type="linenumber">42</context></context-group>
       </trans-unit>
       <trans-unit id="bdd37f55632abc18fb1fbf95d4b3f5f89ce3237b" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 report} other {<x id="INTERPOLATION"/> reports}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 report} other {<x id="INTERPOLATION"/> отчётов}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> отчёт} few {<x id="INTERPOLATION"/> отчёта} other {<x id="INTERPOLATION"/> отчётов}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-abuse-list/abuse-details.component.html</context><context context-type="linenumber">42</context></context-group>
       </trans-unit>
       <trans-unit id="9da0107a35751e722c8b4bca7636fc7645dbdbdc" datatype="html">
@@ -3939,7 +3939,8 @@ The link will expire within 1 hour.</source>
         <target state="translated">Популярные</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/plugins/plugin-search/plugin-search.component.html</context><context context-type="linenumber">16</context></context-group>
       </trans-unit><trans-unit id="10bad6557272f424b12a06c21081609fe7442a9a" datatype="html">
-        <source> <x id="INTERPOLATION" equiv-text="{{ pagination.totalItems }}"/> <x id="ICU" equiv-text="{pagination.totalItems, plural, =1 {result} other {results}}"/> for "<x id="INTERPOLATION_1" equiv-text="{{ search }}"/>" </source><target state="new"> <x id="INTERPOLATION" equiv-text="{{ pagination.totalItems }}"/> <x id="ICU" equiv-text="{pagination.totalItems, plural, =1 {result} other {results}}"/> for "<x id="INTERPOLATION_1" equiv-text="{{ search }}"/>" </target>
+        <source> <x id="INTERPOLATION" equiv-text="{{ pagination.totalItems }}"/> <x id="ICU" equiv-text="{pagination.totalItems, plural, =1 {result} other {results}}"/> for "<x id="INTERPOLATION_1" equiv-text="{{ search }}"/>" </source>
+				<target state="new"> <x id="INTERPOLATION" equiv-text="{{ pagination.totalItems }}"/> <x id="ICU" equiv-text="{pagination.totalItems, plural, one {результат} few {результата} other {результатов}}"/> для "<x id="INTERPOLATION_1" equiv-text="{{ search }}"/>" </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+admin/plugins/plugin-search/plugin-search.component.html</context>
           <context context-type="linenumber">22,24</context>
@@ -3948,7 +3949,7 @@ The link will expire within 1 hour.</source>
       
       <trans-unit id="16e81be2315b29492395d99ba53a83e770430494" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {result} other {results} }</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {result} other {results} }</target>
+        <target state="translated">{VAR_PLURAL, plural, one {результат} few {результата} other {результатов}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+search/search.component.html</context><context context-type="linenumber">5</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/plugins/plugin-search/plugin-search.component.html</context><context context-type="linenumber">23</context></context-group>
       </trans-unit>
@@ -4476,7 +4477,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="b4d3a94d4c67e02c861a8c7c66c34b74ad2ddf0d" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {user} other {users}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {пользователь} other {пользователей}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {пользователь} few {пользователя} other {пользователей}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/config/edit-custom-config/edit-basic-configuration.component.html</context><context context-type="linenumber">163</context></context-group>
       </trans-unit>
       <trans-unit id="35d3d2813759e2497352953adca2175967a69b88" datatype="html">
@@ -4500,37 +4501,37 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="9a298b5ee14cc04a1cbef88cd1cc54fbb8176bc2" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {Video} other {Videos} }</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {Video} other {Videos} }</target>
+        <target state="translated">{VAR_PLURAL, plural, other {Видео} }</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">24</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">24</context></context-group>
       </trans-unit>
       <trans-unit id="bcf8ce898a641416913d16b5dc39385e83ca069c" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {Channel} other {Channels} }</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {Channel} other {Channels} }</target>
+        <target state="translated">{VAR_PLURAL, plural, one {Канал} few {Канала} other {Каналов} }</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">30</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">30</context></context-group>
       </trans-unit>
       <trans-unit id="8b3b364967f953009a4b83c53ed5cf0b5ff3902a" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {Subscriber} other {Subscribers} }</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {Subscriber} other {Subscribers} }</target>
+        <target state="translated">{VAR_PLURAL, plural, one {Подписчик} few {Подписчика} other {Подписчиков} }</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">36</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">36</context></context-group>
       </trans-unit>
       <trans-unit id="89f26f7ae43839fb1c983c6dc82d7bb9f559ac98" datatype="html">
         <source>Incriminated in reports</source>
-        <target state="translated">Инкриминируется в отчетах</target>
+        <target state="translated">Инкриминируется в отчётах</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">42</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">42</context></context-group>
       </trans-unit>
       <trans-unit id="374b01a6d0311b4e675834b47db9e34d3fb833e7" datatype="html">
         <source>Authored reports accepted</source>
-        <target state="translated">Авторские отчеты приняты</target>
+        <target state="translated">Авторские отчёты приняты</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">48</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">48</context></context-group>
       </trans-unit>
       <trans-unit id="8e29da1e7e8def288e5cf788c6f5ac6e5824259c" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {Comment} other {Comments} }</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {Comment} other {Comments} }</target>
+        <target state="translated">{VAR_PLURAL, plural, one {Комментарий} few {Комментария} other {Комментариев} }</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">54</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/users/user-edit/user-edit.component.html</context><context context-type="linenumber">54</context></context-group>
       </trans-unit>
@@ -4825,7 +4826,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="0ba5a92f3fcf3c32561c73cd7e100776967d920b" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {live} other {lives}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {эфир} =2-4 {эфира} other {эфиров}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {эфир} few {эфира} other {эфиров}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/config/edit-custom-config/edit-live-configuration.component.html</context><context context-type="linenumber">46</context></context-group>
       </trans-unit>
       <trans-unit id="6287b31f7688102ca71d3d79611541b3d41e5d50" datatype="html">
@@ -4838,7 +4839,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="9f667199fbfe1db90e4f3b1a6634f6036db93ad0" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {live} other {lives}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {трансляция} other {трансляции}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {трансляция} few {трансляции} other {трансляций}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+admin/config/edit-custom-config/edit-live-configuration.component.html</context><context context-type="linenumber">59</context></context-group>
       </trans-unit>
       <trans-unit id="4bddd185b531fa5ef6a1b5cebf46de5565968cb1" datatype="html">
@@ -5061,7 +5062,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="64900cccfb1346d742551801b2260df01b4fc521" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {cached image} other {cached images}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {cached image} other {cached images}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {кешированное изображение} few {кешированных изображения} other {кешированных изображений}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+admin/config/edit-custom-config/edit-advanced-configuration.component.html</context>
           <context context-type="linenumber">22</context>
@@ -5074,7 +5075,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="9650f187bc6461dfe36caf7ae5dab69d1faf754e" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {cached caption} other {cached captions}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {cached caption} other {cached captions}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {кешированный субтитр} few {кешированных субтитра} other {кешированных субтитров}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+admin/config/edit-custom-config/edit-advanced-configuration.component.html</context>
           <context context-type="linenumber">36</context>
@@ -5090,7 +5091,7 @@ The link will expire within 1 hour.</source>
       </trans-unit>
       <trans-unit id="1c1a966d85cb4272fc870ed5177867dfdbd0e751" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {cached torrent} other {cached torrents}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {cached torrent} other {cached torrents}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {кешированный торрент} few {кешированных торрента} other {кешированных торрентов}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+admin/config/edit-custom-config/edit-advanced-configuration.component.html</context>
           <context context-type="linenumber">50</context>
@@ -5656,7 +5657,7 @@ color: red;
       </trans-unit>
       <trans-unit id="3d1c3b3acd6c96a4c085df72551d5da74ce19f3e" datatype="html">
         <source>Created <x id="ICU" equiv-text="{pagination.totalItems, plural, =1 {1 playlist} other {{{ pagination.totalItems }} playlists}}"/> </source>
-        <target state="translated">Создано <x id="ICU" equiv-text="{pagination.totalItems, plural, =1 {1 playlist} other {{{ pagination.totalItems }} playlists}}"/> </target>
+        <target state="translated">Создано <x id="ICU" equiv-text="{pagination.totalItems, plural, one {{{ pagination.totalItems }} плейлист} few {{{ pagination.totalItems }} плейлиста} other {{{ pagination.totalItems }} плейлистов}}"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+video-channels/video-channel-playlists/video-channel-playlists.component.html</context>
           <context context-type="linenumber">3,4</context>
@@ -5664,7 +5665,7 @@ color: red;
       </trans-unit>
       <trans-unit id="78e51eacd93a8e5894f64b6da8a26bf166a5cb92" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 playlist} other {<x id="INTERPOLATION"/> playlists}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 playlist} other {<x id="INTERPOLATION"/> playlists}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> плейлист} few {<x id="INTERPOLATION"/> плейлиста} other {<x id="INTERPOLATION"/> плейлистов}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+video-channels/video-channel-playlists/video-channel-playlists.component.html</context>
           <context context-type="linenumber">3</context>
@@ -5707,9 +5708,7 @@ color: red;
       </trans-unit>
       <trans-unit id="2d02841904de7f5f60e2618670ac1059f3abec97">
         <source>Request email for account verification</source>
-        <target>
-    Получить электронное письмо для активации аккаунта
-  </target>
+        <target>Получить электронное письмо для активации аккаунта</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+signup/+verify-account/verify-account-ask-send-email/verify-account-ask-send-email.component.html</context><context context-type="linenumber">3</context></context-group>
       </trans-unit>
       <trans-unit id="eb539ec6941044e284f237f5b40d6a0159afe7af">
@@ -5762,7 +5761,7 @@ color: red;
       </trans-unit>
       <trans-unit id="e948d5f68f06fd5361c9f56e8224dded2374e03c" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 subscriber} other {<x id="INTERPOLATION"/> subscribers}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 subscriber} other {<x id="INTERPOLATION"/> подписчиков}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> подписчик} few {<x id="INTERPOLATION"/> подписчика} other {<x id="INTERPOLATION"/> подписчиков}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+accounts/accounts.component.html</context>
           <context context-type="linenumber">38</context>
@@ -5770,7 +5769,7 @@ color: red;
       </trans-unit>
       <trans-unit id="c1543d40cf35db6b705906a6230fe65f220eb095" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 videos} other {<x id="INTERPOLATION"/> videos}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 videos} other {<x id="INTERPOLATION"/> videos}}</target>
+        <target state="translated">{VAR_PLURAL, plural, other {<x id="INTERPOLATION"/> видео}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+accounts/accounts.component.html</context>
           <context context-type="linenumber">41</context>
@@ -5778,7 +5777,7 @@ color: red;
       </trans-unit>
       <trans-unit id="074db6f0f4533c25fed2e58625b24aa0202b57c7" datatype="html">
         <source><x id="ICU" equiv-text="{accountVideosCount, plural, =1 {1 videos} other {{{ accountVideosCount }} videos}}"/> </source>
-        <target state="translated"><x id="ICU" equiv-text="{accountVideosCount, plural, =1 {1 videos} other {{{ accountVideosCount }} videos}}"/> </target>
+        <target state="translated"><x id="ICU" equiv-text="{accountVideosCount, plural, other {{{ accountVideosCount }} видео}}"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+accounts/accounts.component.html</context>
           <context context-type="linenumber">41,42</context>
@@ -5821,19 +5820,19 @@ color: red;
       </trans-unit>
       <trans-unit id="f15780bbd2d7fa777071975f7445e98a33065e38" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 subscriber} other {<x id="INTERPOLATION"/> subscribers}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =1 {1 subscriber} other {<x id="INTERPOLATION"/> подписчиков}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> подписчик} few {<x id="INTERPOLATION"/> подписчика} other {<x id="INTERPOLATION"/> подписчиков}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+accounts/account-video-channels/account-video-channels.component.html</context><context context-type="linenumber">23</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+my-library/+my-video-channels/my-video-channels.component.html</context><context context-type="linenumber">28</context></context-group>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+video-channels/video-channels.component.html</context><context context-type="linenumber">73</context></context-group>
       </trans-unit>
       <trans-unit id="8c26c4aa2ddb44daca5b5ff08de81ee3a73c88ba" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {1 videos} other {<x id="INTERPOLATION"/> videos}}</source>
-        <target state="new">{VAR_PLURAL, plural, =1 {1 videos} other {<x id="INTERPOLATION"/> videos}}</target>
+        <target state="translated">{VAR_PLURAL, plural, other {<x id="INTERPOLATION"/> видео}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+accounts/account-video-channels/account-video-channels.component.html</context><context context-type="linenumber">26</context></context-group>
       </trans-unit>
       <trans-unit id="693f26a874d1a857dca0ddea2f11b8101e4d18bd" datatype="html">
         <source><x id="ICU" equiv-text="{getTotalVideosOf(videoChannel), plural, =1 {1 videos} other {{{ getTotalVideosOf(videoChannel) }} videos}}"/> </source>
-        <target state="new"> <x id="ICU" equiv-text="{getTotalVideosOf(videoChannel), plural, =1 {1 videos} other {{{ getTotalVideosOf(videoChannel) }} videos}}"/> </target>
+        <target state="new"> <x id="ICU" equiv-text="{getTotalVideosOf(videoChannel), plural, other {{{ getTotalVideosOf(videoChannel) }} видео}}"/> </target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+accounts/account-video-channels/account-video-channels.component.html</context><context context-type="linenumber">26</context></context-group>
       </trans-unit>
       <trans-unit id="b5d2929db6b8305ae285ec9d26ee3e90af966817" datatype="html">
@@ -5843,7 +5842,7 @@ color: red;
       </trans-unit>
       <trans-unit id="21dc89cfca84c2af7fdeb584b34e2529d842b72a" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {No videos} =1 {1 video} other {<x id="INTERPOLATION"/> videos}}</source>
-        <target state="translated">{VAR_PLURAL, plural, =0 {No videos} =1 {1 video} other {<x id="INTERPOLATION"/> видео}}</target>
+        <target state="translated">{VAR_PLURAL, plural, =0 {Нет видео} other {<x id="INTERPOLATION"/> видео}}</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+my-library/+my-video-channels/my-video-channels.component.html</context><context context-type="linenumber">30</context></context-group>
       </trans-unit>
       <trans-unit id="7152797255397280410" datatype="html">
@@ -7642,7 +7641,7 @@ channel with the same name (<x id="PH_2" equiv-text="videoChannel.name"/>)!</sou
       </trans-unit>
       <trans-unit id="2326816287669585542" datatype="html">
         <source>One of your abuse reports has been accepted or rejected by moderators</source>
-        <target state="translated">Один из ваших отчетов о нарушении был принят или отклонен модераторами</target>
+        <target state="translated">Один из ваших отчётов о нарушении был принят или отклонен модераторами</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+my-account/my-account-settings/my-account-notification-preferences/my-account-notification-preferences.component.ts</context><context context-type="linenumber">45</context></context-group>
       </trans-unit>
       <trans-unit id="2764971902180889905" datatype="html">
@@ -8264,7 +8263,7 @@ Ensure you have correctly configured PeerTube (config/ directory), in particular
       </trans-unit>
       <trans-unit id="3c2c6b17d0326ab344e194b17abbee201d58dbea" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ pagination.totalItems | myNumberFormatter }}"/> <x id="ICU" equiv-text="{pagination.totalItems, plural, =1 {result} other {results}}"/></source>
-        <target state="new"><x id="INTERPOLATION" equiv-text="{{ pagination.totalItems | myNumberFormatter }}"/> <x id="ICU" equiv-text="{pagination.totalItems, plural, =1 {result} other {results}}"/></target>
+        <target state="new"><x id="INTERPOLATION" equiv-text="{{ pagination.totalItems | myNumberFormatter }}"/> <x id="ICU" equiv-text="{pagination.totalItems, plural, one {результат} few {результата} other {результатов}}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+search/search.component.html</context>
           <context context-type="linenumber">5</context>
@@ -8357,7 +8356,7 @@ Ensure you have correctly configured PeerTube (config/ directory), in particular
       </trans-unit>
       <trans-unit id="6499699285816188400" datatype="html">
         <source>Abuse reports</source>
-        <target state="translated">Отчеты о нарушениях</target>
+        <target state="translated">Отчёты о нарушениях</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/+my-account/my-account.component.ts</context><context context-type="linenumber">41</context></context-group>
       </trans-unit>
       <trans-unit id="4930506384627295710" datatype="html">
@@ -9716,7 +9715,7 @@ Ensure you have correctly configured PeerTube (config/ directory), in particular
       </trans-unit>
       <trans-unit id="2780460651686172544" datatype="html">
         <source>Subscribed to <x id="PH"/>. You will be notified of all their new videos.</source>
-        <target state="translated">Подписан на <x id="PH"/>. Вы будете уведомлены обо всех их новых видео.</target>
+        <target state="translated">Подписан на <x id="PH"/>. Вы будете уведомлены обо всех их новых видео, в том числе по email.</target>
         <context-group purpose="location"><context context-type="sourcefile">src/app/shared/shared-user-subscription/subscribe-button.component.ts</context><context context-type="linenumber">110</context></context-group>
       </trans-unit>
       <trans-unit id="7019115336138470191">
@@ -9959,7 +9958,7 @@ Ensure you have correctly configured PeerTube (config/ directory), in particular
       </trans-unit>
       <trans-unit id="89f77b6d2638113698ddb2b8e656c1e776df23d3" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {Comments} =1 {1 Comment} other {<x id="INTERPOLATION"/> Comments}}</source>
-        <target state="new">{VAR_PLURAL, plural, =0 {Comments} =1 {1 Comment} other {<x id="INTERPOLATION"/> Comments}}</target>
+        <target state="translated">{VAR_PLURAL, plural, one {<x id="INTERPOLATION"/> Комментарий} few {<x id="INTERPOLATION"/> Комментария} other {<x id="INTERPOLATION"/> Комментариев}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/+videos/+video-watch/comment/video-comments.component.html</context>
           <context context-type="linenumber">4</context>

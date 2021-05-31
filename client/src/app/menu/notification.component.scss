@@ -119,6 +119,14 @@
             color: rgba(20, 20, 20, 0.8);
           }
         }
+
+        button.glyphicon-ok {
+          color: var(--mainColor);
+
+          &:hover {
+            color: var(--mainColorLighter);
+          }
+        }
       }
 
       .all-notifications {

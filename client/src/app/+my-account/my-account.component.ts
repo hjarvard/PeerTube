@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core'
-import { AuthUser, ScreenService } from '@app/core'
+import { AuthUser, ScreenService, AuthService } from '@app/core'
+import { UserRole } from '@shared/models/users'
 import { TopMenuDropdownParam } from '../shared/shared-main/misc/top-menu-dropdown.component'
 
 @Component({
@@ -12,7 +13,8 @@ export class MyAccountComponent implements OnInit {
   user: AuthUser
 
   constructor (
-    private screenService: ScreenService
+    private screenService: ScreenService,
+    private authService: AuthService,
     ) { }
 
   get isBroadcastMessageDisplayed () {
@@ -20,6 +22,7 @@ export class MyAccountComponent implements OnInit {
   }
 
   ngOnInit (): void {
+    this.user = this.authService.getUser()
     this.buildMenu()
   }
 
@@ -55,13 +58,18 @@ export class MyAccountComponent implements OnInit {
         label: $localize`Notifications`,
         routerLink: '/my-account/notifications'
       },
-
-      {
-        label: $localize`Applications`,
-        routerLink: '/my-account/applications'
-      },
-
-      moderationEntries
     ]
+
+    if (this.user.role != UserRole.USER) {
+      this.menuEntries.push(
+
+        {
+          label: $localize`Applications`,
+          routerLink: '/my-account/applications'
+        },
+
+        moderationEntries
+      )
+    }
   }
 }

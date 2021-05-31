@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, ViewChild } from '@angular/core'
 import { AuthService, ConfirmService, Notifier, ServerService, UserService } from '@app/core'
 import { Account, DropdownAction } from '@app/shared/shared-main'
-import { BulkRemoveCommentsOfBody, ServerConfig, User, UserRight } from '@shared/models'
+import { BulkRemoveCommentsOfBody, ServerConfig, User, UserRight, UserRole } from '@shared/models'
 import { BlocklistService } from './blocklist.service'
 import { BulkService } from './bulk.service'
 import { UserBanModalComponent } from './user-ban-modal.component'
@@ -321,6 +321,7 @@ export class UserModerationDropdownComponent implements OnInit, OnChanges {
           {
             label: $localize`Remove comments from your videos`,
             description: $localize`Remove comments made by this account on your videos.`,
+            isDisplayed: ({ user }) => user && user.role != UserRole.USER,
             handler: ({ account }) => this.bulkRemoveCommentsOf({ accountName: account.nameWithHost, scope: 'my-videos' })
           }
         ])

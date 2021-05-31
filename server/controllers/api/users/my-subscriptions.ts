@@ -1,3 +1,4 @@
+import { UserNotificationSettingModel } from '../../../models/account/user-notification-setting'
 import 'multer'
 import * as express from 'express'
 import { sendUndoFollow } from '@server/lib/activitypub/send'
@@ -61,7 +62,7 @@ mySubscriptionsRouter.get('/me/subscriptions',
 mySubscriptionsRouter.post('/me/subscriptions',
   authenticate,
   userSubscriptionAddValidator,
-  addUserSubscription
+  asyncRetryTransactionMiddleware(addUserSubscription)
 )
 
 mySubscriptionsRouter.get('/me/subscriptions/:uri',
@@ -115,9 +116,20 @@ async function areSubscriptionsExist (req: express.Request, res: express.Respons
   return res.json(existObject)
 }
 
-function addUserSubscription (req: express.Request, res: express.Response) {
+async function addUserSubscription (req: express.Request, res: express.Response) {
   const user = res.locals.oauth.token.User
   const [ name, host ] = req.body.uri.split('@')
+
+  const values = {
+    newVideoFromSubscription: 3,
+  }
+
+  const query = {
+    where: {
+      userId: user.id
+    }
+  }
+  await UserNotificationSettingModel.update(values, query)
 
   const payload = {
     name,

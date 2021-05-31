@@ -43,7 +43,7 @@
             {{ video.byAccount }}
           </a>
           <a tabindex="-1" *ngIf="displayOptions.by && displayOwnerVideoChannel()" class="video-miniature-channel" [routerLink]="[ '/video-channels', video.byVideoChannel ]">
-            {{ video.byVideoChannel }}
+            {{ video.channel.displayName }}
           </a>
 
           <div class="video-info-privacy">

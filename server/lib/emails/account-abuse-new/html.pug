@@ -2,13 +2,13 @@ extends ../common/greetings
 include ../common/mixins.pug
 
 block title
-  | An account is pending moderation
+  | Учетная запись ожидает модерации
 
 block content
   p
-    | #[a(href=WEBSERVER.URL) #{instanceName}] received an abuse report for the #{isLocal ? '' : 'remote '}account
+    | #[a(href=WEBSERVER.URL) #{instanceName}] получил отчёт о жалобе #{isLocal ? '' : 'на удалённой дистанционной '}учётной записи
     a(href=accountUrl)  #{accountDisplayName}
 
-  p The reporter, #{reporter}, cited the following reason(s):
+  p Репортёр, #{reporter}, привел следующую причину(ы):
   blockquote #{reason}
   br(style="display: none;")

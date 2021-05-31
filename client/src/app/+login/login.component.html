@@ -52,9 +52,11 @@
           </div>
 
           <div class="looking-for-account alert alert-info"  role="alert">
+            <!--
             <h6 class="alert-heading" i18n>
               Logging into an account lets you publish content
             </h6>
+            -->
 
             <div *ngIf="signupAllowed" i18n>
               This instance allows registration. However, be careful to check the <a class="terms-anchor" (click)="onTermsClick($event, instanceInformation)" href='#'>Terms</a><a class="terms-link" target="_blank" routerLink="/about/instance" fragment="terms">Terms</a> before creating an account.

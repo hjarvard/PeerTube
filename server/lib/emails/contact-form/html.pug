@@ -1,9 +1,9 @@
 extends ../common/greetings
 
 block title
-  | Someone just used the contact form
+  | Кто-то только что воспользовался контактной формой
 
 block content
-  p #{fromName} sent you a message via the contact form on #[a(href=WEBSERVER.URL) #{instanceName}]:
+  p #{fromName} отправил вам сообщение через контактную форму на #[a(href=WEBSERVER.URL) #{instanceName}]:
   blockquote(style='white-space: pre-wrap') #{body}
-  p You can contact them at #[a(href=`mailto:${fromEmail}`) #{fromEmail}], or simply reply to this email to get in touch.
+  p Вы можете связаться с ними по адресу #[a(href=`mailto:${fromEmail}`) #{fromEmail}], или просто ответить на это письмо, чтобы связаться с ними.
