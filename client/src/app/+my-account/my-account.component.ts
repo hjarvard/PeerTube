@@ -58,6 +58,7 @@ export class MyAccountComponent implements OnInit {
         label: $localize`Notifications`,
         routerLink: '/my-account/notifications'
       },
+      moderationEntries
     ]
 
     if (this.user.role != UserRole.USER) {
@@ -67,8 +68,6 @@ export class MyAccountComponent implements OnInit {
           label: $localize`Applications`,
           routerLink: '/my-account/applications'
         },
-
-        moderationEntries
       )
     }
   }
