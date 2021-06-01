@@ -164,9 +164,9 @@ export abstract class AbstractVideoList implements OnInit, OnDestroy, AfterConte
       })
 
     // Display avatar in mobile view
-    if (this.screenService.isInMobileView()) {
-      this.displayOptions.avatar = true
-    }
+    // if (this.screenService.isInMobileView()) {
+    //   this.displayOptions.avatar = true
+    // }
   }
 
   ngOnDestroy () {
