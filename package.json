@@ -89,6 +89,7 @@
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.1",
     "create-torrent": "^4.0.0",
+    "date-fns": "^2.22.1",
     "decache": "^4.6.0",
     "deep-object-diff": "^1.1.0",
     "email-templates": "^8.0.3",
