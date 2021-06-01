@@ -188,7 +188,7 @@ function createDefaultUserNotificationSettings (user: MUserId, t: Transaction | 
     videoAutoBlacklistAsModerator: UserNotificationSettingValue.WEB | UserNotificationSettingValue.EMAIL,
     blacklistOnMyVideo: UserNotificationSettingValue.WEB | UserNotificationSettingValue.EMAIL,
     newUserRegistration: UserNotificationSettingValue.WEB,
-    commentMention: UserNotificationSettingValue.WEB,
+    commentMention: UserNotificationSettingValue.WEB | UserNotificationSettingValue.EMAIL,
     newFollow: UserNotificationSettingValue.WEB,
     newInstanceFollower: UserNotificationSettingValue.WEB,
     abuseNewMessage: UserNotificationSettingValue.WEB | UserNotificationSettingValue.EMAIL,

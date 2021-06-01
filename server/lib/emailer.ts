@@ -65,12 +65,12 @@ class Emailer {
 
     const emailPayload: EmailPayload = {
       to,
-      subject: channelName + ' just published a new video',
-      text: `Your subscription ${channelName} just published a new video: "${video.name}".`,
+      subject: 'Канал ' + channelName + ' опубликовал новое видео',
+      text: `На канале ${channelName} появилось новое видео: "${video.name}".`,
       locals: {
-        title: 'New content ',
+        title: 'Новый контент ',
         action: {
-          text: 'View video',
+          text: 'Посмотреть видео',
           url: videoUrl
         }
       }
