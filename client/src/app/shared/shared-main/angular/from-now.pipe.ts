@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core'
 
-import formatDistanceToNowStrict from 'date-fns/formatDistanceToNow'
+import { formatDistanceToNowStrict } from 'date-fns'
 import { ru } from 'date-fns/locale'
 
 // Thanks: https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site
