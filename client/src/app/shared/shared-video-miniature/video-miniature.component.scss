@@ -8,10 +8,6 @@ $more-button-width: 40px;
   @include miniature-name;
 }
 
-.video-miniature-information {
-  width: calc(100% - #{$more-button-width});
-}
-
 my-actor-avatar {
   margin: 10px 10px 0 0;
 }
