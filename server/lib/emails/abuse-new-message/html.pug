@@ -2,10 +2,10 @@ extends ../common/greetings
 include ../common/mixins.pug
 
 block title
-  | New message on abuse report
+  | Новое сообщение о жалобе
 
 block content
   p
-    | A new message by #{messageAccountName} was posted on #[a(href=abuseUrl) abuse report ##{abuseId}] on #{instanceName}
+    | Новое сообщение о жалобе от #{messageAccountName} было опубликовано #[a(href=abuseUrl) в отчётах ##{abuseId}] на #{instanceName}
   blockquote #{messageText}
   br(style="display: none;")

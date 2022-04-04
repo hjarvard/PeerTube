@@ -26,7 +26,7 @@ export class RecommendedVideosComponent implements OnInit, OnChanges {
     date: true,
     views: true,
     by: true,
-    avatar: true
+    avatar: false
   }
 
   userMiniature: User
