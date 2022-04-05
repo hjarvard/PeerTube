@@ -32,11 +32,13 @@
     </div>
   </div>
 
+  <!--
   <my-video-filters-header
     *ngIf="displayFilters" [displayModerationBlock]="displayModerationBlock" [hideScope]="hideScopeFilter"
     [filters]="filters"
     (filtersChanged)="onFiltersChanged(true)"
   ></my-video-filters-header>
+-->
 
   <div class="no-results" i18n *ngIf="hasDoneFirstQuery && videos.length === 0">No results.</div>
   <div
