@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { AuthService, AuthUser, ScreenService, ServerService } from '@app/core'
-import { HTMLServerConfig } from '@shared/models'
+import { HTMLServerConfig, UserRole } from '@shared/models'
 import { TopMenuDropdownParam } from '../shared/shared-main/misc/top-menu-dropdown.component'
 
 @Component({
@@ -41,13 +41,16 @@ export class MyLibraryComponent implements OnInit {
 
   private buildMenu () {
     this.menuEntries = [
-      {
-        label: $localize`Channels`,
-        routerLink: '/my-library/video-channels'
-      }
     ]
 
-    if (this.user.canSeeVideosLink) {
+    if (this.user.role != UserRole.USER) {
+      this.menuEntries.push({
+        label: $localize`Channels`,
+        routerLink: '/my-library/video-channels'
+      })
+    }
+
+    if (this.user.canSeeVideosLink && this.user.role != UserRole.USER) {
       this.menuEntries.push({
         label: $localize`Videos`,
         routerLink: '/my-library/videos'
@@ -55,11 +58,6 @@ export class MyLibraryComponent implements OnInit {
     }
 
     this.menuEntries = this.menuEntries.concat([
-      {
-        label: $localize`Playlists`,
-        routerLink: '/my-library/video-playlists'
-      },
-
       {
         label: $localize`Follows`,
         children: [
@@ -74,6 +72,11 @@ export class MyLibraryComponent implements OnInit {
             routerLink: '/my-library/followers'
           }
         ]
+      },
+
+      {
+        label: $localize`Playlists`,
+        routerLink: '/my-library/video-playlists'
       },
 
       {

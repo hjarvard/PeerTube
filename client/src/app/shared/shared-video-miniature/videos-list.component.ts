@@ -160,9 +160,9 @@ export class VideosListComponent implements OnInit, OnChanges, OnDestroy {
       })
 
     // Display avatar in mobile view
-    if (this.screenService.isInMobileView()) {
-      this.displayOptions.avatar = true
-    }
+    // if (this.screenService.isInMobileView()) {
+    //   this.displayOptions.avatar = true
+    // }
   }
 
   ngOnDestroy () {

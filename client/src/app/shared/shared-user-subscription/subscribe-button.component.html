@@ -1,5 +1,6 @@
 <div
   class="btn-group-subscribe btn-group"
+  [title]="!isAllChannelsSubscribed ? 'подписаться с уведомлениями по email' : ''"
   [ngClass]="{'subscribe-button': !isAllChannelsSubscribed, 'unsubscribe-button': isAllChannelsSubscribed, 'big': isBigButton }"
 >
 

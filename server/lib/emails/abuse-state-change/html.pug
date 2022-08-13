@@ -2,8 +2,8 @@ extends ../common/greetings
 include ../common/mixins.pug
 
 block title
-  | Abuse report state changed
+  | Изменено состояние отчёта о жалобе
 
 block content
   p
-    | #[a(href=abuseUrl) Your abuse report ##{abuseId}] on #{instanceName} has been #{isAccepted ? 'accepted' : 'rejected'}
+    | #[a(href=abuseUrl) Ваш отчёт о жалобе ##{abuseId}] на #{instanceName} был #{isAccepted ? 'принят' : 'отклонён'}

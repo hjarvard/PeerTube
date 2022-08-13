@@ -2,17 +2,17 @@ extends ../common/greetings
 include ../common/mixins.pug
 
 block title
-  | A video is pending moderation
+  | Видео находится на модерации
 
 block content
   p
-    | #[a(href=WEBSERVER.URL) #{instanceName}] received an abuse report for the #{isLocal ? '' : 'remote '}video "
+    | #[a(href=WEBSERVER.URL) #{instanceName}] получил отчёт о жалобе #{isLocal ? '' : 'на удалённое дистанционное '}видео "
     a(href=videoUrl) #{videoName}
-    | " by #[+channel(videoChannel)]
+    | " от #[+channel(videoChannel)]
     if videoPublishedAt
-      | , published the #{videoPublishedAt}.
+      | , опубликовано #{videoPublishedAt}.
     else
-      | , uploaded the #{videoCreatedAt} but not yet published.
-  p The reporter, #{reporter}, cited the following reason(s):
+      | , загружено #{videoCreatedAt}, но ещё не опубликовано.
+  p Репортёр, #{reporter}, привел следующую причину(ы):
   blockquote #{reason}
   br(style="display: none;")

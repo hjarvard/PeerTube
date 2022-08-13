@@ -1,12 +1,12 @@
 extends ../common/greetings
 
 block title
-  | Password reset for your account
+  | Сброс пароля для вашей учетной записи
 
 block content
   p.
-    A reset password procedure for your account #{username} has been requested on #[a(href=WEBSERVER.URL) #{instanceName}].
-    Please follow #[a(href=resetPasswordUrl) this link] to reset it: #[a(href=resetPasswordUrl) #{resetPasswordUrl}]
-    (the link will expire within 1 hour).
+    На #[a(href=WEBSERVER.URL) #{instanceName}] была запрошена процедура сброса пароля для вашей учетной записи #{username}.
+    Пожалуйста, перейдите по #[a(href=resetPasswordUrl) этой ссылке], чтобы сбросить его: #[a(href=resetPasswordUrl) #{resetPasswordUrl}]
+    (срок действия ссылки истекает в течение 1 часа).
   p.
-    If you are not the person who initiated this request, please ignore this email.
+    Если вы не отправляли этот запрос, пожалуйста, проигнорируйте это письмо.
