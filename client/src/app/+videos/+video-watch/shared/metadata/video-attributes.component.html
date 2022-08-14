@@ -19,11 +19,6 @@
 </div>
 
 <!--
-<div *ngIf="!!video.originallyPublishedAt" class="attribute attribute-originally-published-at">
-  <span i18n class="attribute-label">Originally published</span>
-  <span class="attribute-value">{{ video.originallyPublishedAt | date: 'dd MMMM yyyy' }}</span>
-</div>
-
 <div class="attribute attribute-category">
   <span i18n class="attribute-label">Category</span>
   <span *ngIf="!video.category.id" class="attribute-value">{{ video.category.label }}</span>
@@ -67,6 +62,10 @@
 </div>
 -->
 
+<div *ngIf="!!video.originallyPublishedAt" class="attribute attribute-originally-published-at">
+  <span i18n class="attribute-label">Originally published</span>
+  <span class="attribute-value">{{ video.originallyPublishedAt | date: 'dd MMMM yyyy' }}</span>
+</div>
 <div class="attribute attribute-eula">
   <span class="attribute-label">Условия использования</span>
   <span class="attribute-value">Копирование и распространение в коммерческих целях не допускается</span>
