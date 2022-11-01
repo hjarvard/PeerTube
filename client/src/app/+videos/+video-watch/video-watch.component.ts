@@ -573,8 +573,8 @@ export class VideoWatchComponent implements OnInit, OnDestroy {
       const byLocalStorage = getStoredVideoWatchHistory(video.uuid)
 
       if (byUrl) return timeToInt(urlOptions.startTime)
-      if (byHistory) return video.userHistory.currentTime
-      if (byLocalStorage) return byLocalStorage.duration
+      // if (byHistory) return video.userHistory.currentTime
+      // if (byLocalStorage) return byLocalStorage.duration
 
       return 0
     }

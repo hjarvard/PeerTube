@@ -1,10 +1,10 @@
 extends ../common/greetings
 
 block title
-  | Password creation for your account
+  | Создание пароля для вашей учетной записи
 
 block content
   p.
-    Welcome to #[a(href=WEBSERVER.URL) #{instanceName}]. Your username is: #{username}.
-    Please set your password by following #[a(href=createPasswordUrl) this link]: #[a(href=createPasswordUrl) #{createPasswordUrl}] 
-    (this link will expire within seven days).
+    Добро пожаловать на #[a(href=WEBSERVER.URL) #{instanceName}]. Ваше имя пользователя: #{username}.
+    Пожалуйста, установите пароль, перейдя #[a(href=createPasswordUrl) по ссылке]: #[a(href=createPasswordUrl) #{createPasswordUrl}] 
+    (срок действия этой ссылки истекает в течение семи дней).

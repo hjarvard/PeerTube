@@ -1,11 +1,11 @@
 extends ../common/greetings
 
 block title
-  | Someone mentioned you
+  | Кто-то упомянул вас
 
 block content
   p.
-    #[a(href=accountUrl title=handle) #{accountName}] mentioned you in a comment on video
+    #[a(href=accountUrl title=handle) #{accountName}] упомянул(а) вас в комментарии к видео
     "#[a(href=videoUrl) #{video.name}]":
   blockquote !{commentHtml}
   br(style="display: none;")

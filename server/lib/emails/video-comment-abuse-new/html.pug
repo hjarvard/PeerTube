@@ -2,15 +2,15 @@ extends ../common/greetings
 include ../common/mixins.pug
 
 block title
-  | A comment is pending moderation
+  | Комментарий ожидает модерации
 
 block content
   p
-    | #[a(href=WEBSERVER.URL) #{instanceName}] received an abuse report for the #{isLocal ? '' : 'remote '}
-    a(href=commentUrl) comment on video "#{videoName}"
-    |  of #{flaggedAccount}
-    |  created on #{commentCreatedAt}
+    | #[a(href=WEBSERVER.URL) #{instanceName}] получил отчёт о жалобе #{isLocal ? '' : 'на удалённый дистанционный '}
+    a(href=commentUrl) комментарий к видео "#{videoName}"
+    |  от #{flaggedAccount}
+    |  созданный #{commentCreatedAt}
 
-  p The reporter, #{reporter}, cited the following reason(s):
+  p Репортёр, #{reporter}, привел следующую причину(ы):
   blockquote #{reason}
   br(style="display: none;")

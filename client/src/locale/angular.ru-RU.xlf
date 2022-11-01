@@ -9547,7 +9547,7 @@ Ensure you have correctly configured PeerTube (config/ directory), in particular
       </trans-unit>
       <trans-unit id="6470888608149621404" datatype="html">
         <source>ON <x id="PH" equiv-text="config.instance.name"/></source>
-        <target state="translated">НА <x id="PH" equiv-text="config.instance.name"/></target>
+        <target state="translated">НА СЕРВЕРЕ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/menu/menu.service.ts</context>
           <context context-type="linenumber">150</context>
