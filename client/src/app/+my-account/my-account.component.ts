@@ -62,7 +62,7 @@ export class MyAccountComponent implements OnInit {
       moderationEntries
     ]
 
-    if (this.user.role != UserRole.USER) {
+    if (this.user.role.id != UserRole.USER) {
       this.menuEntries.push(
 
         {
