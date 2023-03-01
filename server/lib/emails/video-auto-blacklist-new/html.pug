@@ -2,15 +2,15 @@ extends ../common/greetings
 include ../common/mixins
 
 block title
-  | A video is pending moderation
+  | Видео находится на модерации
 
 block content
   p
-    | A recently added video was auto-blacklisted and requires moderator review before going public:
+    | Недавно добавленное видео было автоматически занесено в черный список и требует проверки модератором перед публикацией:
     |
     a(href=videoUrl) #{videoName}
     |
-    | by #[+channel(channel)].
+    | от #[+channel(channel)].
   p.
     Apart from the publisher and the moderation team, no one will be able to see the video until you
     unblacklist it. If you trust the publisher, any admin can whitelist the user for later videos so

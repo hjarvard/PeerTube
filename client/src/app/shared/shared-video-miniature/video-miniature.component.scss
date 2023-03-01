@@ -16,10 +16,6 @@ $more-button-width: 40px;
   @include miniature-name;
 }
 
-.video-miniature-information {
-  width: calc(100% - #{$more-button-width});
-}
-
 my-actor-avatar {
   @include margin(10px, 10px, 0, 0);
 }
@@ -63,6 +59,9 @@ my-actor-avatar {
 .video-actions {
   width: $more-button-width;
   height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
 
   ::ng-deep .dropdown-root:not(.show) {
     opacity: 0;
@@ -104,6 +103,7 @@ my-actor-avatar {
     display: flex;
     width: 100%;
     min-width: 1px;
+    position: relative;
   }
 
   .video-miniature-name {

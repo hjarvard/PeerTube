@@ -23,7 +23,7 @@ const myLibraryRoutes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'video-channels',
+        redirectTo: 'subscriptions',
         pathMatch: 'full'
       },
 

@@ -47,12 +47,12 @@ export class NewVideoForSubscribers extends AbstractNotification <MVideoAccountL
 
     return {
       to,
-      subject: channelName + ' just published a new video',
-      text: `Your subscription ${channelName} just published a new video: "${this.payload.name}".`,
+      subject: 'Канал ' + channelName + ' опубликовал новое видео',
+      text: `На канале ${channelName} появилось новое видео: "${this.payload.name}".`,
       locals: {
-        title: 'New content ',
+        title: 'Новый контент ',
         action: {
-          text: 'View video',
+          text: 'Посмотреть видео',
           url: videoUrl
         }
       }

@@ -128,12 +128,12 @@ export class MenuService {
     }
 
     links = links.concat([
-      {
-        icon: 'globe' as 'globe',
-        label: $localize`Discover videos`,
-        shortLabel: $localize`Discover`,
-        path: '/videos/overview'
-      },
+      // {
+      //   icon: 'globe' as 'globe',
+      //   label: $localize`Discover videos`,
+      //   shortLabel: $localize`Discover`,
+      //   path: '/videos/overview'
+      // },
       {
         icon: 'trending' as 'trending',
         label: $localize`Trending videos`,
