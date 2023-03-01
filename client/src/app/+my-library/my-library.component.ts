@@ -43,14 +43,14 @@ export class MyLibraryComponent implements OnInit {
     this.menuEntries = [
     ]
 
-    if (this.user.role != UserRole.USER) {
+    if (this.user.role.id != UserRole.USER) {
       this.menuEntries.push({
         label: $localize`Channels`,
         routerLink: '/my-library/video-channels'
       })
     }
 
-    if (this.user.canSeeVideosLink && this.user.role != UserRole.USER) {
+    if (this.user.canSeeVideosLink && this.user.role.id != UserRole.USER) {
       this.menuEntries.push({
         label: $localize`Videos`,
         routerLink: '/my-library/videos'
