@@ -58,7 +58,7 @@ body {
   --activatedActionButtonColor: #{$activated-action-button-color};
 
   --horizontalMarginContent: #{$not-expanded-horizontal-margins};
-  --videosHorizontalMarginContent: 6vw;
+  --videosHorizontalMarginContent: 2vw;
   --mainColWidth: calc(100vw - #{$menu-width});
 
   font-family: $main-fonts;
